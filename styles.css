@@ -4,14 +4,10 @@
     align-items: center;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-}
-
 table{
     border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 td{
@@ -20,63 +16,89 @@ td{
     padding: 25px 50px;
     height: 120px;
     width: 100px;
-}
-
-.grid-container > div{
-    text-align: center;
-    font-size: 100px;
-    padding: 0px 0px 100px 0px;
-    margin: 0; 
-    border: 10px solid;
+    border: 10px solid #F1F6F9;
+    color: #9BA4B5;
 }
 
 .row-0.column-0{
-    border-right: 10px solid black ;
-    border-bottom: 10px solid black ;
+    border-top: 0px;
+    border-left: 0px;
 }
 
 .row-0.column-1{
-    border-left: 10px solid black;
-    border-right: 10px solid black;
-    border-bottom: 10px solid black;
+    border-top: 0px;
 }
 
 .row-0.column-2{
-    border-left: 10px solid black;
-    border-bottom: 10px solid black;
+    border-right: 0px;
+    border-top: 0px;
 }
 
 .row-1.column-0{
-    border-top: 10px solid black;
-    border-right: 10px solid black;
-    border-bottom: 10px solid black;
-}
-
-.row-1.column-1{
-    border-left: 10px solid black;
-    border-right: 10px solid black;
-    border-bottom: 10px solid black;
+    border-left: 0px;
 }
 
 .row-1.column-2{
-    border-left: 10px solid black;
-    border-top: 10px solid black;
-    border-bottom: 10px solid black;
+    border-right: 0px;
 }
 
 .row-2.column-0{
-    border-top: 10px solid black;
-    border-right: 10px solid black;
+    border-left: 0px;
+    border-bottom: 0px;
 }
 
 .row-2.column-1{
-    border-left: 10px solid black;
-    border-top: 10px solid black;
-    border-right: 10px solid black;
+    border-bottom: 0px;
 }
 
 .row-2.column-2{
-    border-left: 10px solid black;
-    border-top: 10px solid black;
+    border-right: 0px;
+    border-bottom: 0px;
 }
 
+hr{
+    width: 100%;
+}
+
+body{
+    background-color: #212A3E;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+footer{
+    font-size: 20px;
+}
+
+h1, h2, footer{
+    color: #F1F6F9;
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 30px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    td{
+        font-size: 50px;
+        padding: 12.5px 25px;
+        height: 60px;
+        width: 50px;
+        border: 5px solid #F1F6F9;
+    }
+    
+}

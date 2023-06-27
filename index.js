@@ -44,11 +44,11 @@ function userPlays(event){
 
     if(checkForAWin("X")){
         setTimeout(function(){
-            alert("You won !");
+            alert("🕺🏿 You won! 🕺🏿");
         }, 0);
         gameOver();
     }else{
-        document.querySelector("h2").textContent = "Your computer is about to make a move...";
+        document.querySelector("h2").textContent = "Your device is about to make a move...";
         if(isGameOver()){
             return;
         }
@@ -72,7 +72,7 @@ function computerPlays(){
         document.querySelector("h2").textContent = "Your turn!";
         if(checkForAWin("O")){
             setTimeout(function(){
-                alert("You lost :(");
+                alert("You lost 🙇🏿");
             }, 0);
             gameOver();
         };
@@ -124,6 +124,7 @@ function isGameOver(){
             }
         }
     }
+    alert("It's a draw! 🙅‍♂️")
     gameOver();
     return true;
 }
